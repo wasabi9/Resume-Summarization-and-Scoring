@@ -26,6 +26,6 @@ Ensemble score is a weighted average of all these individual factors
 ## Hitchhiker's Guide to Resume Summarization and Rating
 - Pre-requisite : Python 3.7+ installed on system and set as environment variable (alt. installed using Anaconda environment and accesed in the terminal)
 - Install all the required packages using the requirements.txt 
-'''
+```
     pip3 install -r requirements.txt
-'''
+```
