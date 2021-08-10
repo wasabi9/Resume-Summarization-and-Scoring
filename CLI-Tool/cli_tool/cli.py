@@ -199,19 +199,19 @@ def overall_resume_score(doc_resume,resume,jd):
     return score
 
 @click.command()
-@click.option("--res","-r","in_file",required=True,
+@click.option("--res","-r","in_file",default=os.path.join("./Resume",os.listdir("./Resume")[0]),
 help = "Path to the resume.",
 )
-@click.option("--jd","-j","jd_file",required=True,
+@click.option("--jd","-j","jd_file",default=os.path.join("./JD",os.listdir("./JD")[0]),
 help="Path to Job Description")
-@click.option("--out-file","-o",default="./output.txt",
+@click.option("--out-file","-o",default="./Summary/output.txt",
 help = "Path to the resume summary")
 def process(in_file,jd_file,out_file):
     """
         The CLI function
     """
 
-    ner_model = spacy.load(os.path.join(os.path.dirname(os.path.getcwd())
+    ner_model = spacy.load(os.path.join(os.path.dirname(os.getcwd())
     ,'Training_NER/saved-NER.model'))
     parser_resume = parser.from_file(in_file)
     resume = parser_resume['content']
