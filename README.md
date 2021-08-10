@@ -36,3 +36,6 @@ Ensemble score is a weighted average of all these individual factors
     python -m cli_tool.cli
 ```
 - The output summary and rating will be stored as a output.txt in the CLI-Tool/Summary folder
+
+## PRD Document for the Tool
+Link : https://docs.google.com/document/d/1aRgn7UYTrdMgnzW-KIHZJqwpdZLPjkDercym9E4uysU/edit?usp=sharing
