@@ -8,6 +8,7 @@ import sys
 import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
+import os
 
 
 def preprocess(doc):
@@ -184,7 +185,8 @@ help="Path to Job Description")
 @click.option("--out-file","-o",default="./output.txt",
 help = "Path to the resume summary")
 def process(in_file,jd_file,out_file):
-    ner_model = spacy.load('saved-NER.model')
+    ner_model = spacy.load(os.path.join(os.path.dirname(os.path.getcwd())
+    ,'Training_NER/saved-NER.model'))
     parser_resume = parser.from_file(in_file)
     resume = parser_resume['content']
     resume = preprocess(resume)
