@@ -29,3 +29,10 @@ Ensemble score is a weighted average of all these individual factors
 ```
     pip3 install -r requirements.txt
 ```
+- Place the Resume in the CLI-Tool/Resume folder and the JD in the CLI-Tool/JD folder. Note: only keep one file in both these folders at one time. The files can be in pdf, docx or txt format
+- Open the terminal, change your working directory to CLI-Tool
+- Run the following command 
+```
+    python -m cli_tool.cli
+```
+- The output summary and rating will be stored as a output.txt in the CLI-Tool/Summary folder
