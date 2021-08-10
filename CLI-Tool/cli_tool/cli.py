@@ -82,11 +82,9 @@ def dotProduct(D1, D2):
     for key in D1:	
         if key in D2:
             Sum += (D1[key] * D2[key])
-			
-	return Sum
-
-# returns the angle in radians
-# between document vectors
+            
+    return Sum
+    
 def vector_angle(D1, D2):
     """
         Returns the angle angle in radians between the vectors
